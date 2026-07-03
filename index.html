@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Garden Reads — Feature Guide</title>
+<meta name="description" content="Garden Reads: a calm, private, on-device reader for ebooks, audiobooks and comics, with on-device AI, learning tools and cloud sync.">
+<style>
+  :root { --bg:#f4f1e7; --card:#fbf9f2; --ink:#2c2418; --muted:#6b6553; --accent:#4f7d2e; --line:#e2ddcd; }
+  @media (prefers-color-scheme:dark) { :root { --bg:#14170f; --card:#1c2016; --ink:#eae7dc; --muted:#9a9a86; --accent:#8bbe5f; --line:#2a2f22; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.55 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; }
+  header { text-align:center; padding:64px 20px 30px; }
+  header h1 { font-size:2.6rem; margin:0 0 10px; font-family:Georgia,serif; }
+  header p { color:var(--muted); max-width:640px; margin:0 auto; font-size:1.05rem; }
+  nav { position:sticky; top:0; z-index:5; background:var(--bg); border-bottom:1px solid var(--line); padding:10px 14px; display:flex; gap:8px; flex-wrap:wrap; justify-content:center; }
+  nav a { color:var(--accent); text-decoration:none; font-size:.85rem; padding:4px 11px; border:1px solid var(--line); border-radius:999px; }
+  nav a:hover { background:var(--card); }
+  main { max-width:1200px; margin:0 auto; padding:8px 16px 80px; }
+  section { padding-top:40px; }
+  h2 { font-size:1.7rem; border-bottom:2px solid var(--accent); display:inline-block; padding-bottom:4px; margin:16px 0 20px; }
+  h3 { color:var(--muted); font-size:1.05rem; margin:24px 0 12px; }
+  .grid { display:grid; gap:20px; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); }
+  figure { margin:0; background:var(--card); border:1px solid var(--line); border-radius:14px; overflow:hidden; cursor:zoom-in; transition:transform .12s; }
+  figure:hover { transform:translateY(-3px); }
+  figure img { width:100%; display:block; }
+  figcaption { padding:10px 12px; font-size:.85rem; color:var(--muted); }
+  footer { text-align:center; color:var(--muted); font-size:.8rem; padding:36px; }
+  #lb { position:fixed; inset:0; background:rgba(0,0,0,.85); display:none; align-items:center; justify-content:center; z-index:50; cursor:zoom-out; padding:24px; }
+  #lb img { max-width:100%; max-height:100%; border-radius:12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Garden Reads</h1>
+  <p>A calm, private, on-device reader for ebooks, audiobooks &amp; comics — with on-device AI, learning tools, and cloud sync. Every feature, one page.</p>
+</header>
+<nav><a href="#Onboarding%20Flow">Onboarding</a><a href="#Importing%20Books">Importing Books</a><a href="#Library">Library</a><a href="#Drawer">Drawer</a><a href="#Reader%20and%20Player">Reader &amp; Player</a><a href="#Tools">Tools</a><a href="#Dictionary">Dictionary</a><a href="#AI">AI</a><a href="#Insights">Insights</a><a href="#Sync">Sync</a><a href="#Prefferences">Preferences</a></nav>
+<main>
+<section id="Onboarding%20Flow"><h2>Onboarding</h2>
+<div class="grid"><figure><img loading="lazy" src="img/Onboarding%20Flow/Page%201.webp" alt="Page 1" onclick="zoom(this)"><figcaption>Page 1</figcaption></figure>
+<figure><img loading="lazy" src="img/Onboarding%20Flow/Page%202.webp" alt="Page 2" onclick="zoom(this)"><figcaption>Page 2</figcaption></figure>
+<figure><img loading="lazy" src="img/Onboarding%20Flow/Page%203.webp" alt="Page 3" onclick="zoom(this)"><figcaption>Page 3</figcaption></figure>
+<figure><img loading="lazy" src="img/Onboarding%20Flow/Page%204.webp" alt="Page 4" onclick="zoom(this)"><figcaption>Page 4</figcaption></figure>
+<figure><img loading="lazy" src="img/Onboarding%20Flow/Page%205.webp" alt="Page 5" onclick="zoom(this)"><figcaption>Page 5</figcaption></figure>
+<figure><img loading="lazy" src="img/Onboarding%20Flow/Page%206.webp" alt="Page 6" onclick="zoom(this)"><figcaption>Page 6</figcaption></figure></div>
+</section><section id="Importing%20Books"><h2>Importing Books</h2>
+<div class="grid"><figure><img loading="lazy" src="img/Importing%20Books/Audio%20Import%20Options.webp" alt="Audio Import Options" onclick="zoom(this)"><figcaption>Audio Import Options</figcaption></figure>
+<figure><img loading="lazy" src="img/Importing%20Books/Audio%20Import%20Options_zoom.webp" alt="Audio Import Options zoom" onclick="zoom(this)"><figcaption>Audio Import Options zoom</figcaption></figure>
+<figure><img loading="lazy" src="img/Importing%20Books/Audiobookshelf%20Import.webp" alt="Audiobookshelf Import" onclick="zoom(this)"><figcaption>Audiobookshelf Import</figcaption></figure>
+<figure><img loading="lazy" src="img/Importing%20Books/Audiobookshelf%20connection.webp" alt="Audiobookshelf connection" onclick="zoom(this)"><figcaption>Audiobookshelf connection</figcaption></figure>
+<figure><img loading="lazy" src="img/Importing%20Books/Book%20Import%20Options.webp" alt="Book Import Options" onclick="zoom(this)"><figcaption>Book Import Options</figcaption></figure>
+<figure><img loading="lazy" src="img/Importing%20Books/Book%20Import%20Options_zoom.webp" alt="Book Import Options zoom" onclick="zoom(this)"><figcaption>Book Import Options zoom</figcaption></figure>
+<figure><img loading="lazy" src="img/Importing%20Books/Calibre%20Connection.webp" alt="Calibre Connection" onclick="zoom(this)"><figcaption>Calibre Connection</figcaption></figure>
+<figure><img loading="lazy" src="img/Importing%20Books/Calibre%20Import.webp" alt="Calibre Import" onclick="zoom(this)"><figcaption>Calibre Import</figcaption></figure>
+<figure><img loading="lazy" src="img/Importing%20Books/Calibre%20Libraries.webp" alt="Calibre Libraries" onclick="zoom(this)"><figcaption>Calibre Libraries</figcaption></figure>
+<figure><img loading="lazy" src="img/Importing%20Books/Calibre%20Libraries_zoom.webp" alt="Calibre Libraries zoom" onclick="zoom(this)"><figcaption>Calibre Libraries zoom</figcaption></figure>
+<figure><img loading="lazy" src="img/Importing%20Books/Free%20Audiobook%20Browser.webp" alt="Free Audiobook Browser" onclick="zoom(this)"><figcaption>Free Audiobook Browser</figcaption></figure>
+<figure><img loading="lazy" src="img/Importing%20Books/Free%20Audiobook%20Seach%20Found.webp" alt="Free Audiobook Seach Found" onclick="zoom(this)"><figcaption>Free Audiobook Seach Found</figcaption></figure>
+<figure><img loading="lazy" src="img/Importing%20Books/Free%20eBook%20Browser.webp" alt="Free eBook Browser" onclick="zoom(this)"><figcaption>Free eBook Browser</figcaption></figure>
+<figure><img loading="lazy" src="img/Importing%20Books/Free%20eBook%20Search%20Found.webp" alt="Free eBook Search Found" onclick="zoom(this)"><figcaption>Free eBook Search Found</figcaption></figure>
+<figure><img loading="lazy" src="img/Importing%20Books/Free%20eBook%20Search.webp" alt="Free eBook Search" onclick="zoom(this)"><figcaption>Free eBook Search</figcaption></figure>
+<figure><img loading="lazy" src="img/Importing%20Books/Local%20Import.webp" alt="Local Import" onclick="zoom(this)"><figcaption>Local Import</figcaption></figure></div>
+</section><section id="Library"><h2>Library</h2>
+<div class="grid"><figure><img loading="lazy" src="img/Library/Add%20or%20Remove%20from%20Shelf.webp" alt="Add or Remove from Shelf" onclick="zoom(this)"><figcaption>Add or Remove from Shelf</figcaption></figure>
+<figure><img loading="lazy" src="img/Library/Add%20to%20Secure%20Folder.webp" alt="Add to Secure Folder" onclick="zoom(this)"><figcaption>Add to Secure Folder</figcaption></figure>
+<figure><img loading="lazy" src="img/Library/Dark%204x4.webp" alt="Dark 4x4" onclick="zoom(this)"><figcaption>Dark 4x4</figcaption></figure>
+<figure><img loading="lazy" src="img/Library/Light%203x3%20no%20reading.webp" alt="Light 3x3 no reading" onclick="zoom(this)"><figcaption>Light 3x3 no reading</figcaption></figure>
+<figure><img loading="lazy" src="img/Library/Light%203x3.webp" alt="Light 3x3" onclick="zoom(this)"><figcaption>Light 3x3</figcaption></figure>
+<figure><img loading="lazy" src="img/Library/Light%204x4.webp" alt="Light 4x4" onclick="zoom(this)"><figcaption>Light 4x4</figcaption></figure>
+<figure><img loading="lazy" src="img/Library/Light%205x5.webp" alt="Light 5x5" onclick="zoom(this)"><figcaption>Light 5x5</figcaption></figure>
+<figure><img loading="lazy" src="img/Library/Light%20List%20mode.webp" alt="Light List mode" onclick="zoom(this)"><figcaption>Light List mode</figcaption></figure>
+<figure><img loading="lazy" src="img/Library/Mark%20Books.webp" alt="Mark Books" onclick="zoom(this)"><figcaption>Mark Books</figcaption></figure>
+<figure><img loading="lazy" src="img/Library/Reading%20Row%20Setting%20OFF.webp" alt="Reading Row Setting OFF" onclick="zoom(this)"><figcaption>Reading Row Setting OFF</figcaption></figure>
+<figure><img loading="lazy" src="img/Library/Reading%20Row%20Setting%20ON.webp" alt="Reading Row Setting ON" onclick="zoom(this)"><figcaption>Reading Row Setting ON</figcaption></figure>
+<figure><img loading="lazy" src="img/Library/Refresh%20Metadata.webp" alt="Refresh Metadata" onclick="zoom(this)"><figcaption>Refresh Metadata</figcaption></figure>
+<figure><img loading="lazy" src="img/Library/Search.webp" alt="Search" onclick="zoom(this)"><figcaption>Search</figcaption></figure>
+<figure><img loading="lazy" src="img/Library/Sheet%20Filter.webp" alt="Sheet Filter" onclick="zoom(this)"><figcaption>Sheet Filter</figcaption></figure>
+<figure><img loading="lazy" src="img/Library/Sheet%20Sort.webp" alt="Sheet Sort" onclick="zoom(this)"><figcaption>Sheet Sort</figcaption></figure></div>
+</section><section id="Drawer"><h2>Drawer</h2>
+<div class="grid"><figure><img loading="lazy" src="img/Drawer/App%20theme%20Settings.webp" alt="App theme Settings" onclick="zoom(this)"><figcaption>App theme Settings</figcaption></figure>
+<figure><img loading="lazy" src="img/Drawer/Arranging%20Shelves%20or%20%20Delete.webp" alt="Arranging Shelves or Delete" onclick="zoom(this)"><figcaption>Arranging Shelves or Delete</figcaption></figure>
+<figure><img loading="lazy" src="img/Drawer/Light%20Listen.webp" alt="Light Listen" onclick="zoom(this)"><figcaption>Light Listen</figcaption></figure>
+<figure><img loading="lazy" src="img/Drawer/Light%20Read%20Swapped.webp" alt="Light Read Swapped" onclick="zoom(this)"><figcaption>Light Read Swapped</figcaption></figure>
+<figure><img loading="lazy" src="img/Drawer/Light%20Read.webp" alt="Light Read" onclick="zoom(this)"><figcaption>Light Read</figcaption></figure>
+<figure><img loading="lazy" src="img/Drawer/Night%20Listen.webp" alt="Night Listen" onclick="zoom(this)"><figcaption>Night Listen</figcaption></figure>
+<figure><img loading="lazy" src="img/Drawer/Night%20Read%20Swapped.webp" alt="Night Read Swapped" onclick="zoom(this)"><figcaption>Night Read Swapped</figcaption></figure>
+<figure><img loading="lazy" src="img/Drawer/Night%20Read.webp" alt="Night Read" onclick="zoom(this)"><figcaption>Night Read</figcaption></figure></div>
+</section><section id="Reader%20and%20Player"><h2>Reader &amp; Player</h2>
+<div class="grid"><figure><img loading="lazy" src="img/Reader%20and%20Player/Audio%20Player%20Dark.webp" alt="Audio Player Dark" onclick="zoom(this)"><figcaption>Audio Player Dark</figcaption></figure>
+<figure><img loading="lazy" src="img/Reader%20and%20Player/Audio%20Player%20Light.webp" alt="Audio Player Light" onclick="zoom(this)"><figcaption>Audio Player Light</figcaption></figure>
+<figure><img loading="lazy" src="img/Reader%20and%20Player/Comic%20Book.webp" alt="Comic Book" onclick="zoom(this)"><figcaption>Comic Book</figcaption></figure>
+<figure><img loading="lazy" src="img/Reader%20and%20Player/Oled%20Reader%20with%20selection.webp" alt="Oled Reader with selection" onclick="zoom(this)"><figcaption>Oled Reader with selection</figcaption></figure>
+<figure><img loading="lazy" src="img/Reader%20and%20Player/PDF.webp" alt="PDF" onclick="zoom(this)"><figcaption>PDF</figcaption></figure>
+<figure><img loading="lazy" src="img/Reader%20and%20Player/Page%20Navigation.webp" alt="Page Navigation" onclick="zoom(this)"><figcaption>Page Navigation</figcaption></figure>
+<figure><img loading="lazy" src="img/Reader%20and%20Player/Reader%20Epub%20Clean.webp" alt="Reader Epub Clean" onclick="zoom(this)"><figcaption>Reader Epub Clean</figcaption></figure></div>
+<h3>Different Reader Customizations</h3>
+<div class="grid"><figure><img loading="lazy" src="img/Reader%20and%20Player/Different%20Reader%20Customizations/Cream%20paper.webp" alt="Cream paper" onclick="zoom(this)"><figcaption>Cream paper</figcaption></figure>
+<figure><img loading="lazy" src="img/Reader%20and%20Player/Different%20Reader%20Customizations/Custom%20Theme%20Setting.webp" alt="Custom Theme Setting" onclick="zoom(this)"><figcaption>Custom Theme Setting</figcaption></figure>
+<figure><img loading="lazy" src="img/Reader%20and%20Player/Different%20Reader%20Customizations/Custom.webp" alt="Custom" onclick="zoom(this)"><figcaption>Custom</figcaption></figure>
+<figure><img loading="lazy" src="img/Reader%20and%20Player/Different%20Reader%20Customizations/Customization_List.webp" alt="Customization List" onclick="zoom(this)"><figcaption>Customization List</figcaption></figure>
+<figure><img loading="lazy" src="img/Reader%20and%20Player/Different%20Reader%20Customizations/Kraft%20paper.webp" alt="Kraft paper" onclick="zoom(this)"><figcaption>Kraft paper</figcaption></figure>
+<figure><img loading="lazy" src="img/Reader%20and%20Player/Different%20Reader%20Customizations/Oled.webp" alt="Oled" onclick="zoom(this)"><figcaption>Oled</figcaption></figure>
+<figure><img loading="lazy" src="img/Reader%20and%20Player/Different%20Reader%20Customizations/Sepia.webp" alt="Sepia" onclick="zoom(this)"><figcaption>Sepia</figcaption></figure>
+<figure><img loading="lazy" src="img/Reader%20and%20Player/Different%20Reader%20Customizations/Settings%201.webp" alt="Settings 1" onclick="zoom(this)"><figcaption>Settings 1</figcaption></figure>
+<figure><img loading="lazy" src="img/Reader%20and%20Player/Different%20Reader%20Customizations/Settings%202.webp" alt="Settings 2" onclick="zoom(this)"><figcaption>Settings 2</figcaption></figure>
+<figure><img loading="lazy" src="img/Reader%20and%20Player/Different%20Reader%20Customizations/Settings%203.webp" alt="Settings 3" onclick="zoom(this)"><figcaption>Settings 3</figcaption></figure>
+<figure><img loading="lazy" src="img/Reader%20and%20Player/Different%20Reader%20Customizations/Settings%204.webp" alt="Settings 4" onclick="zoom(this)"><figcaption>Settings 4</figcaption></figure>
+<figure><img loading="lazy" src="img/Reader%20and%20Player/Different%20Reader%20Customizations/Settings%205.webp" alt="Settings 5" onclick="zoom(this)"><figcaption>Settings 5</figcaption></figure>
+<figure><img loading="lazy" src="img/Reader%20and%20Player/Different%20Reader%20Customizations/Spring.webp" alt="Spring" onclick="zoom(this)"><figcaption>Spring</figcaption></figure>
+<figure><img loading="lazy" src="img/Reader%20and%20Player/Different%20Reader%20Customizations/Summer.webp" alt="Summer" onclick="zoom(this)"><figcaption>Summer</figcaption></figure>
+<figure><img loading="lazy" src="img/Reader%20and%20Player/Different%20Reader%20Customizations/White%20paper.webp" alt="White paper" onclick="zoom(this)"><figcaption>White paper</figcaption></figure></div>
+</section><section id="Tools"><h2>Tools</h2>
+<div class="grid"><figure><img loading="lazy" src="img/Tools/Copy.webp" alt="Copy" onclick="zoom(this)"><figcaption>Copy</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Dictionary%20Offline%20Pop-Up.webp" alt="Dictionary Offline Pop-Up" onclick="zoom(this)"><figcaption>Dictionary Offline Pop-Up</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Dictionary.webp" alt="Dictionary" onclick="zoom(this)"><figcaption>Dictionary</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Edit%20Dictionary.webp" alt="Edit Dictionary" onclick="zoom(this)"><figcaption>Edit Dictionary</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Edit%20Highlight%20.webp" alt="Edit Highlight" onclick="zoom(this)"><figcaption>Edit Highlight</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Edit%20Quote.webp" alt="Edit Quote" onclick="zoom(this)"><figcaption>Edit Quote</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Highilghts%20example.webp" alt="Highilghts example" onclick="zoom(this)"><figcaption>Highilghts example</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Highlights.webp" alt="Highlights" onclick="zoom(this)"><figcaption>Highlights</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Languages.webp" alt="Languages" onclick="zoom(this)"><figcaption>Languages</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Menu.webp" alt="Menu" onclick="zoom(this)"><figcaption>Menu</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Note.webp" alt="Note" onclick="zoom(this)"><figcaption>Note</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Online%20Dictionary.webp" alt="Online Dictionary" onclick="zoom(this)"><figcaption>Online Dictionary</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Share.webp" alt="Share" onclick="zoom(this)"><figcaption>Share</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Sharing%20Quote.webp" alt="Sharing Quote" onclick="zoom(this)"><figcaption>Sharing Quote</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Sheet%20Book%20Search%20Found.webp" alt="Sheet Book Search Found" onclick="zoom(this)"><figcaption>Sheet Book Search Found</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Sheet%20Book%20Search.webp" alt="Sheet Book Search" onclick="zoom(this)"><figcaption>Sheet Book Search</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Sheet%20Bookmark.webp" alt="Sheet Bookmark" onclick="zoom(this)"><figcaption>Sheet Bookmark</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Sheet%20Highlights%20ALL.webp" alt="Sheet Highlights ALL" onclick="zoom(this)"><figcaption>Sheet Highlights ALL</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Sheet%20Highlights%20Sorted.webp" alt="Sheet Highlights Sorted" onclick="zoom(this)"><figcaption>Sheet Highlights Sorted</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Sheet%20Table%20of%20Contents.webp" alt="Sheet Table of Contents" onclick="zoom(this)"><figcaption>Sheet Table of Contents</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Sheet%20Vocabulary.webp" alt="Sheet Vocabulary" onclick="zoom(this)"><figcaption>Sheet Vocabulary</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/TTS_1.webp" alt="TTS 1" onclick="zoom(this)"><figcaption>TTS 1</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/TTS_2.webp" alt="TTS 2" onclick="zoom(this)"><figcaption>TTS 2</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/TTS_3.webp" alt="TTS 3" onclick="zoom(this)"><figcaption>TTS 3</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Text%20Pop-Up%202.webp" alt="Text Pop-Up 2" onclick="zoom(this)"><figcaption>Text Pop-Up 2</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Text%20Pop-Up%20Showoff.webp" alt="Text Pop-Up Showoff" onclick="zoom(this)"><figcaption>Text Pop-Up Showoff</figcaption></figure></div>
+<h3>Audio Player</h3>
+<div class="grid"><figure><img loading="lazy" src="img/Tools/Audio%20Player/Skip%20Time.webp" alt="Skip Time" onclick="zoom(this)"><figcaption>Skip Time</figcaption></figure></div>
+<h3>Translations</h3>
+<div class="grid"><figure><img loading="lazy" src="img/Tools/Translations/Custom%20Dictionary%20URL.webp" alt="Custom Dictionary URL" onclick="zoom(this)"><figcaption>Custom Dictionary URL</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Translations/Google%20Translate%201.webp" alt="Google Translate 1" onclick="zoom(this)"><figcaption>Google Translate 1</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Translations/Google%20Translate%202.webp" alt="Google Translate 2" onclick="zoom(this)"><figcaption>Google Translate 2</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Translations/Offline%20Translation%201.webp" alt="Offline Translation 1" onclick="zoom(this)"><figcaption>Offline Translation 1</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Translations/Offline%20Translation%202.webp" alt="Offline Translation 2" onclick="zoom(this)"><figcaption>Offline Translation 2</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Translations/Offline%20Translation%203.webp" alt="Offline Translation 3" onclick="zoom(this)"><figcaption>Offline Translation 3</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Translations/Search%20Priority.webp" alt="Search Priority" onclick="zoom(this)"><figcaption>Search Priority</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/Translations/Translation.webp" alt="Translation" onclick="zoom(this)"><figcaption>Translation</figcaption></figure></div>
+<h3>White Removal</h3>
+<div class="grid"><figure><img loading="lazy" src="img/Tools/White%20Removal/White_Removal_1.webp" alt="White Removal 1" onclick="zoom(this)"><figcaption>White Removal 1</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/White%20Removal/White_Removal_2.webp" alt="White Removal 2" onclick="zoom(this)"><figcaption>White Removal 2</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/White%20Removal/White_Removal_3.webp" alt="White Removal 3" onclick="zoom(this)"><figcaption>White Removal 3</figcaption></figure>
+<figure><img loading="lazy" src="img/Tools/White%20Removal/White_Removal_4.webp" alt="White Removal 4" onclick="zoom(this)"><figcaption>White Removal 4</figcaption></figure></div>
+</section><section id="Dictionary"><h2>Dictionary</h2>
+<div class="grid"><figure><img loading="lazy" src="img/Dictionary/Vocabulary%20Card.webp" alt="Vocabulary Card" onclick="zoom(this)"><figcaption>Vocabulary Card</figcaption></figure></div>
+</section><section id="AI"><h2>AI</h2>
+<div class="grid"><figure><img loading="lazy" src="img/AI/AI%20Chat.webp" alt="AI Chat" onclick="zoom(this)"><figcaption>AI Chat</figcaption></figure>
+<figure><img loading="lazy" src="img/AI/AI%20Download.webp" alt="AI Download" onclick="zoom(this)"><figcaption>AI Download</figcaption></figure>
+<figure><img loading="lazy" src="img/AI/AI.webp" alt="AI" onclick="zoom(this)"><figcaption>AI</figcaption></figure>
+<figure><img loading="lazy" src="img/AI/Model%20Selection.webp" alt="Model Selection" onclick="zoom(this)"><figcaption>Model Selection</figcaption></figure></div>
+</section><section id="Insights"><h2>Insights</h2>
+<div class="grid"><figure><img loading="lazy" src="img/Insights/Insights%20Chart.webp" alt="Insights Chart" onclick="zoom(this)"><figcaption>Insights Chart</figcaption></figure>
+<figure><img loading="lazy" src="img/Insights/Insights%20Settings_zoom.webp" alt="Insights Settings zoom" onclick="zoom(this)"><figcaption>Insights Settings zoom</figcaption></figure></div>
+</section><section id="Sync"><h2>Sync</h2>
+<div class="grid"><figure><img loading="lazy" src="img/Sync/Manual%20Import.webp" alt="Manual Import" onclick="zoom(this)"><figcaption>Manual Import</figcaption></figure>
+<figure><img loading="lazy" src="img/Sync/Sync%20and%20Import%20Settings.webp" alt="Sync and Import Settings" onclick="zoom(this)"><figcaption>Sync and Import Settings</figcaption></figure></div>
+</section><section id="Prefferences"><h2>Preferences</h2>
+<h3>Haptics</h3>
+<div class="grid"><figure><img loading="lazy" src="img/Prefferences/Haptics/Default%20Haptics.webp" alt="Default Haptics" onclick="zoom(this)"><figcaption>Default Haptics</figcaption></figure>
+<figure><img loading="lazy" src="img/Prefferences/Haptics/Haptics%20Setting.webp" alt="Haptics Setting" onclick="zoom(this)"><figcaption>Haptics Setting</figcaption></figure>
+<figure><img loading="lazy" src="img/Prefferences/Haptics/Page%20Flip%20Haptic.webp" alt="Page Flip Haptic" onclick="zoom(this)"><figcaption>Page Flip Haptic</figcaption></figure></div>
+<h3>Zen Mode</h3>
+<div class="grid"><figure><img loading="lazy" src="img/Prefferences/Zen%20Mode/Zen%20Mode%20DND.webp" alt="Zen Mode DND" onclick="zoom(this)"><figcaption>Zen Mode DND</figcaption></figure>
+<figure><img loading="lazy" src="img/Prefferences/Zen%20Mode/Zen%20Mode%20Toggle.webp" alt="Zen Mode Toggle" onclick="zoom(this)"><figcaption>Zen Mode Toggle</figcaption></figure></div>
+</section>
+</main>
+<footer>Garden Reads — feature guide</footer>
+<div id="lb" onclick="this.style.display='none'"><img alt=""></div>
+<script>
+  function zoom(el){ var lb=document.getElementById('lb'); lb.querySelector('img').src=el.src; lb.style.display='flex'; }
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') document.getElementById('lb').style.display='none'; });
+</script>
+</body>
+</html>
